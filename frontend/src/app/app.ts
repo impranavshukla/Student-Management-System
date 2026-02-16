@@ -12,6 +12,8 @@ export class App {
  
   name:any="Lauda lassan";
 
+
   message:any="Fuck off";
+
   
 }
