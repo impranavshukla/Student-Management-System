@@ -6,8 +6,10 @@ import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
-  { path: '', component: Login },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: Login },
   { path: 'signup', component: SignUp },
+
   { path: 'home', component: Home },
   { path: 'about', component: About },
   { path: 'contact', component: Contact }
