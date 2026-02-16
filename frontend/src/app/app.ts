@@ -9,11 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('frontend');
- 
-  name:any="Lauda lassan";
-
-
-  message:any="Fuck off";
 
   
 }
