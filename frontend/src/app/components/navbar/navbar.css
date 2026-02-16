@@ -1,39 +1,77 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
 .navbar {
     left:0;
     right:0;
     top:0;
     position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #667eea;
-  padding: 12px 40px;
-  color: white;
-  font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+   background: linear-gradient(135deg, #ff512f, #f09819);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* Logo */
 .logo {
-  font-size: 22px;
-  font-weight: bold;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
 }
 
+/* Links */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+    display: flex;
+    list-style: none;
 }
 
 .nav-links li {
-  display: inline;
+    margin-left: 30px;
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
 }
 
+/* Hover Effect */
 .nav-links a:hover {
-  color: #ffd700;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Active link (Angular router) */
+a.active {
+    background: white;
+    color: #4facfe;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
 }
