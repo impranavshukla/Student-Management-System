@@ -6,6 +6,7 @@ import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 import { Add } from './pages/add/add';
 import { StudentLayout } from './layout/student-layout/student-layout';
+import { TeacherLayout } from './layout/teacher-layout/teacher-layout';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'signup', component: SignUp },
 
   { path: 'studentLayout', component: StudentLayout },
+  { path: 'teacherLayout', component: TeacherLayout },
   { path: 'home', component: Home },
   { path: 'about', component: About },
    { path: 'add', component: Add },
