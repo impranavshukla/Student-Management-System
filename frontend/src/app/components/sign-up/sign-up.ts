@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,6 +10,8 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './sign-up.css',
 })
 export class SignUp {
+  constructor(private http:HttpClient,private router:Router) {}
+
  signupForm = new FormGroup({
   fullName: new FormControl('', [Validators.required,Validators.minLength(3)]),
   email: new FormControl('', [Validators.required,Validators.email]),
@@ -20,6 +24,10 @@ export class SignUp {
  });
 
  onSignUp(){
-  console.log(this.signupForm.value);
+  this.http.post('http://localhost:3000/teachers', this.signupForm.value).subscribe((res:any)=>{
+    this.router.navigateByUrl('/home');
+    localStorage.setItem('teacher',JSON.stringify(res));
+    alert('Sign Up Successful!');
+  });
  }
 }

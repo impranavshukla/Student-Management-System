@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "id": 1,
+      "id": "1",
       "rollNumber": "CSE301",
       "fullName": "Giyu Tomioka",
       "email": "giyu.tomioka@college.edu",
@@ -20,7 +20,7 @@
       "image": "https://i.imgur.com/8Km9tLL.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "rollNumber": "CSE302",
       "fullName": "Kyojuro Rengoku",
       "email": "kyojuro.rengoku@college.edu",
@@ -39,7 +39,7 @@
       "image": "https://i.imgur.com/JQ9qF6H.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "rollNumber": "CSE303",
       "fullName": "Shinobu Kocho",
       "email": "shinobu.kocho@college.edu",
@@ -58,7 +58,7 @@
       "image": "https://i.imgur.com/2DsA49b.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "rollNumber": "CSE304",
       "fullName": "Tengen Uzui",
       "email": "tengen.uzui@college.edu",
@@ -77,7 +77,7 @@
       "image": "https://i.imgur.com/rhLZl1D.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "rollNumber": "CSE305",
       "fullName": "Mitsuri Kanroji",
       "email": "mitsuri.kanroji@college.edu",
@@ -96,14 +96,47 @@
       "image": "https://i.imgur.com/Wk3V0xN.jpg"
     }
   ],
-  "teachers":[
+  "teachers": [
     {
-        "id": 1,
-        "email":"admin@gmail.com",
-        "password":"admin123",
-        "fullName": "Dr. Kiyoshi Takeda",
-        "department": "Computer Science and Engineering",
-        "phone": "9876543210"
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "fullName": "Dr. Kiyoshi Takeda",
+      "department": "Computer Science and Engineering",
+      "phone": "9876543210"
+    },
+    {
+      "id": "9dea",
+      "fullName": "Pranav",
+      "email": "pranav@test.com",
+      "phone": "1234567890",
+      "employeeId": "345",
+      "subject": "DSA",
+      "department": "CSE",
+      "experience": 3,
+      "password": "1234567890"
+    },
+    {
+      "id": "3c6d",
+      "fullName": "dfghj",
+      "email": "fghj@fghj.com",
+      "phone": "1234567890",
+      "employeeId": "345",
+      "subject": "fghjkl",
+      "department": "kas",
+      "experience": 23,
+      "password": "1234"
+    },
+    {
+      "id": "7c60",
+      "fullName": "khdskfh",
+      "email": "skj@kldsl.com",
+      "phone": "1234567890",
+      "employeeId": "234",
+      "subject": "dsa",
+      "department": "dss",
+      "experience": 2,
+      "password": "455623875478"
     }
   ]
 }
