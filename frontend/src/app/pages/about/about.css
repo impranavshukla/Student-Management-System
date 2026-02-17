@@ -1,0 +1,18 @@
+.about-page {
+  min-height: calc(100vh - 100px); /* keep footer at bottom */
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.about-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}

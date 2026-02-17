@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  background: linear-gradient(135deg, #667eea, #764ba2, #ff758c); /* gradient background */
+  background:#fefae0; /* gradient background */
 }
 
 /* Form container */
@@ -48,7 +48,7 @@ input:focus {
 button {
   width: 100%;
   padding: 12px;
-  background: #764ba2;
+  background:rgb(255, 165, 0);
   border: none;
   border-radius: 8px;
   color: white;
@@ -61,6 +61,6 @@ button {
 
 /* Button hover */
 button:hover {
-  background: #5a3490;
+  background: #904034;
   transform: scale(1.03);
 }

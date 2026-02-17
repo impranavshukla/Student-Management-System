@@ -1,0 +1,51 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefae0;
+  color: #333;
+}
+
+/* Contact page content */
+.contact-page {
+  min-height: 100vh;
+  padding: 40px 20px 120px 20px; /* extra padding at bottom for footer */
+}
+
+.contact-page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #FEB47B, #FF7E5F);
+}
+
