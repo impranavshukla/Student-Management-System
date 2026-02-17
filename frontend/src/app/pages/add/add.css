@@ -1,0 +1,66 @@
+/* Main div background */
+.main {
+  width: 100%;
+  min-height: 100vh; /* full height of viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #667eea, #764ba2, #ff758c); /* gradient background */
+}
+
+/* Form container */
+.form-container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95); /* slightly transparent for pop-out effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Form heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 8px rgba(118, 75, 162, 0.5);
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #764ba2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* Button hover */
+button:hover {
+  background: #5a3490;
+  transform: scale(1.03);
+}

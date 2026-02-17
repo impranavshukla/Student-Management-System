@@ -1,0 +1,26 @@
+<div class="main">
+
+<div class="form-container">
+  <h2>Add Student</h2>
+
+  <form [formGroup]="studentForm" (ngSubmit)="submit()">
+
+    <input type="text" placeholder="Full Name" formControlName="fullName">
+
+    <input type="text" placeholder="Roll Number" formControlName="rollNumber">
+
+    <input type="email" placeholder="Email" formControlName="email">
+
+    <input type="text" placeholder="Phone" formControlName="phone">
+
+    <input type="text" placeholder="Department" formControlName="department">
+
+    <input type="number" placeholder="Attendance %" formControlName="attendancePercentage">
+
+    <input type="text" placeholder="Image URL" formControlName="image">
+
+    <button type="submit">Add Student</button>
+
+  </form>
+</div>
+</div>
