@@ -8,7 +8,7 @@ import { Footer } from '../../components/footer/footer';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,Navbar,Footer],
+  imports: [CommonModule],
   templateUrl: './home.html',
    styleUrls: ['./home.css']
 })

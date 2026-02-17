@@ -5,12 +5,14 @@ import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 import { Add } from './pages/add/add';
+import { StudentLayout } from './layout/student-layout/student-layout';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: Login },
   { path: 'signup', component: SignUp },
 
+  { path: 'studentLayout', component: StudentLayout },
   { path: 'home', component: Home },
   { path: 'about', component: About },
    { path: 'add', component: Add },
