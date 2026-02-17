@@ -1,3 +1,4 @@
+import { Footer } from './../../components/footer/footer';
 
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-add',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule,ReactiveFormsModule,Footer],
   templateUrl: './add.html',
   styleUrl: './add.css',
 })

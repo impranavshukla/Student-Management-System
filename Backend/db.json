@@ -104,6 +104,16 @@
       "department": "cse",
       "attendancePercentage": 23,
       "image": "https://i.imgur.com/8Km9tLL.jpg"
+    },
+    {
+      "id": "b805",
+      "fullName": "pranavna shukla",
+      "rollNumber": "12345",
+      "email": "shukla@123",
+      "phone": "1234567890",
+      "department": "cs",
+      "attendancePercentage": 70,
+      "image": "https://i.imgur.com/JQ9qF6H.jpg"
     }
   ],
   "teachers": [
