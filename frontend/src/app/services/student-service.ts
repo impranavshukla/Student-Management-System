@@ -19,5 +19,12 @@ export class StudentService {
   return this.http.post(this.Url, student);
 }
 
-
+getStudentDelete(id: any) {
+    
+    return this.http.delete(this.Url + '/' + id);
+  }
 }
+
+
+
+

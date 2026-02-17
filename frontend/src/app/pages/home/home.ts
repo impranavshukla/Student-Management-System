@@ -19,11 +19,23 @@ export class Home {
   constructor(private studentService: StudentService , private router:Router) {}
 
   ngOnInit(): void {
+  this.getStudents();
+}
+
+
+getStudents() {
   this.studentService.getStudents().subscribe(data => {
-    console.log(data);  
     this.students.set(data);
   });
 }
+
+
+deleteStudent(id: any) {
+  this.studentService.getStudentDelete(id).subscribe(() => {
+    this.getStudents();   
+  });
+}
+
 
 
 }

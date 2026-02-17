@@ -1,21 +1,28 @@
 <div class="container">
-  <div class="card" *ngFor="let student of students()">
 
-    <img [src]="student.image" alt="student">
-
-    <h3>{{student.fullName}}</h3>
-
-    <p><b>Roll:</b> {{student.rollNumber}}</p>
-
-    <p><b>Department:</b> {{student.department}}</p>
-
-    <p><b>Attendance:</b> {{student.attendancePercentage}}%</p>
-
-    <!-- Buttons -->
-    <div class="card-buttons">
-      <button  class="edit-btn">Edit</button>
-      <button  class="delete-btn">Delete</button>
-    </div>
-
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" placeholder="Search student..." class="search-input">
+    <button class="search-btn">Search</button>
   </div>
+
+  <!-- Cards Section -->
+  <div class="cards-wrapper">
+    <div class="card" *ngFor="let student of students()">
+
+      <img [src]="student.image" alt="student">
+
+      <h3>{{student.fullName}}</h3>
+      <p><b>Roll:</b> {{student.rollNumber}}</p>
+      <p><b>Department:</b> {{student.department}}</p>
+      <p><b>Attendance:</b> {{student.attendancePercentage}}%</p>
+
+      <div class="card-buttons">
+        <button class="edit-btn">Edit</button>
+        <button (click)="deleteStudent(student.id)" class="delete-btn">Delete</button>
+      </div>
+
+    </div>
+  </div>
+
 </div>
