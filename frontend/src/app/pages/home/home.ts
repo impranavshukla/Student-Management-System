@@ -1,11 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { StudentService } from '../../services/student-service';
+import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { Navbar } from '../../components/navbar/navbar';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule,Navbar],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+   styleUrls: ['./home.css']
 })
 export class Home {
+
+  students = signal<any[]>([]);   
+
+  constructor(private studentService: StudentService , private router:Router) {}
+
+  ngOnInit(): void {
+  this.studentService.getStudents().subscribe(data => {
+    console.log(data);  
+    this.students.set(data);
+  });
+}
+
 
 }
