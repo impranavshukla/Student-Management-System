@@ -37,7 +37,7 @@ export class Add {
     if (this.studentForm.valid) {
       this.studentService.addStudent(this.studentForm.value).subscribe(() => {
         alert('Student Added Successfully');
-        this.router.navigate(['/home']);
+        this.router.navigate(['/teacherLayout/home']);
       });
     }
   }

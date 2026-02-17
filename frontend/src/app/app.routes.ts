@@ -14,9 +14,13 @@ export const routes: Routes = [
   { path: 'signup', component: SignUp },
 
   { path: 'studentLayout', component: StudentLayout },
-  { path: 'teacherLayout', component: TeacherLayout },
+  { path: 'teacherLayout', component: TeacherLayout , children:[
+    { path: '', redirectTo: 'home', pathMatch: 'full' }, 
   { path: 'home', component: Home },
   { path: 'about', component: About },
    { path: 'add', component: Add },
   { path: 'contact', component: Contact }
+  ]
+ },
 ];
+  
