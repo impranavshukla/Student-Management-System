@@ -94,16 +94,6 @@
       },
       "address": "Hiroshima",
       "image": "https://i.imgur.com/Wk3V0xN.jpg"
-    },
-    {
-      "id": "d9f4",
-      "fullName": "preeti singh",
-      "rollNumber": "1234",
-      "email": "pree@gmail.com",
-      "phone": "1234567890",
-      "department": "cse",
-      "attendancePercentage": 23,
-      "image": "https://i.imgur.com/8Km9tLL.jpg"
     }
   ],
   "teachers": [
