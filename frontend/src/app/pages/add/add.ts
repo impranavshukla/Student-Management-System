@@ -23,14 +23,22 @@ export class Add {
     private router: Router
   ) {
     this.studentForm = new FormGroup({
-      fullName: new FormControl('', Validators.required),
-      rollNumber: new FormControl('', Validators.required),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      phone: new FormControl('', Validators.required),
-      department: new FormControl('', Validators.required),
-      attendancePercentage: new FormControl('', Validators.required),
-      image: new FormControl('')
-    });
+  name: new FormControl('', [
+    Validators.required,
+    Validators.minLength(3)
+  ]),
+
+  email: new FormControl('', [
+    Validators.required,
+    Validators.email
+  ]),
+
+  age: new FormControl('', [
+    Validators.required,
+    Validators.min(1),
+    Validators.max(100)
+  ])
+});
   }
 
   submit() {

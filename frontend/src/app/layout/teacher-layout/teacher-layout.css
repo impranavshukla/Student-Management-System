@@ -1,4 +1,33 @@
-/* .mainBody{
-    width: 100%;
-    height: 100vh;
-} */
+/* Make full page height layout */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main body area */
+.main-body {
+  flex: 1;
+  background-color: #f4f6f9;
+  padding: 20px 40px;
+}
+
+/* Content wrapper */
+.content-wrapper {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  min-height: 500px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-body {
+    padding: 15px;
+  }
+
+  .content-wrapper {
+    padding: 15px;
+  }
+}

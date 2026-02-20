@@ -26,6 +26,7 @@ export class Home {
 getStudents() {
   this.studentService.getStudents().subscribe(data => {
     this.students.set(data);
+    console.log(data)
   });
 }
 

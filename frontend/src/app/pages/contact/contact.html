@@ -1,24 +1,47 @@
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-<link rel="stylesheet" href="contact.css">
-</head>
-<body>
-
-<div class="contact-page">
+<!-- CONTACT HERO -->
+<section class="contact-hero">
   <h1>Contact Us</h1>
-  <form onsubmit="alert('Thank you! Your message has been sent.'); return false;">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <p>We would love to hear from you. Get in touch with us.</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<div class="contact-container">
+
+  <!-- LEFT SIDE - CONTACT INFO -->
+  <div class="contact-info">
+    <h2>Get In Touch</h2>
+
+    <div class="info-item">
+      <span>📍</span>
+      <p>United College Campus, Prayagraj, India</p>
+    </div>
+
+    <div class="info-item">
+      <span>📧</span>
+      <p>support@studentms.com</p>
+    </div>
+
+    <div class="info-item">
+      <span>📞</span>
+      <p>+91 9876543210</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE - CONTACT FORM -->
+  <div class="contact-form-container">
+    <h2>Send Message</h2>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="send-btn">Send Message</button>
+
+    </form>
+  </div>
+
 </div>
-
- 
- 
-</body>
-</html>
-

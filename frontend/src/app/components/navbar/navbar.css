@@ -1,77 +1,76 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Navbar */
+/* ================= NAVBAR MAIN ================= */
 .navbar {
-    left:0;
-    right:0;
-    top:0;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-   background: linear-gradient(135deg, #ff512f, #f09819);
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  position: fixed;        /* Always fixed at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;          /* Always above cards */
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo */
+/* ================= NAV CONTAINER ================= */
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 70px;              /* Fixed height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= LOGO ================= */
 .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
 }
 
-/* Links */
+/* ================= NAV LINKS ================= */
 .nav-links {
-    display: flex;
-    list-style: none;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-.nav-links li {
-    margin-left: 30px;
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 5px 0;
+  position: relative;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 6px 10px;
-    border-radius: 6px;
-    transition: 0.3s ease;
+/* Hover effect */
+.nav-links li a:hover {
+  opacity: 0.8;
 }
 
-/* Hover Effect */
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+/* Active link underline */
+.nav-links li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
 }
 
-/* Active link (Angular router) */
-a.active {
-    background: white;
-    color: #4facfe;
-}
-
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .nav-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
 
-    .nav-links {
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        margin: 10px;
-    }
+  .nav-links {
+    margin-top: 10px;
+    gap: 20px;
+  }
 }

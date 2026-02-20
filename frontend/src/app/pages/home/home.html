@@ -1,3 +1,12 @@
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Student Management System</h1>
+    <p>Manage student records, attendance and performance efficiently</p>
+    <button class="hero-btn">Explore Students</button>
+  </div>
+</section>
+
 <div class="container">
 
   <!-- Search Bar -->
@@ -6,23 +15,30 @@
     <button class="search-btn">Search</button>
   </div>
 
-  <!-- Cards Section -->
   <div class="cards-wrapper">
-    <div class="card" *ngFor="let student of students()">
+  <div class="student-card" *ngFor="let student of students()">
 
-      <img [src]="student.image" alt="student">
-
-      <h3>{{student.fullName}}</h3>
-      <p><b>Roll:</b> {{student.rollNumber}}</p>
-      <p><b>Department:</b> {{student.department}}</p>
-      <p><b>Attendance:</b> {{student.attendancePercentage}}%</p>
-
-      <div class="card-buttons">
-        <button class="edit-btn">Edit</button>
-        <button (click)="deleteStudent(student.id)" class="delete-btn">Delete</button>
+    <div class="card-top">
+      <div class="avatar">
+        {{ student.name.charAt(0) }}
       </div>
-
+      <div class="student-id">
+        ID: {{ student.id }}
+      </div>
     </div>
+
+    <div class="card-body">
+      <h3>{{ student.name }}</h3>
+      <p class="email">{{ student.email }}</p>
+      <!-- <p class="age">Age: {{ student.age }}</p> -->
+    </div>
+
+    <div class="card-actions">
+      <button class="edit-btn">Edit</button>
+      <button (click)="deleteStudent(student.id)" class="delete-btn">Delete</button>
+    </div>
+
   </div>
+</div>
 
 </div>

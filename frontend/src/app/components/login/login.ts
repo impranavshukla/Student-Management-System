@@ -21,7 +21,7 @@ export class Login {
   onLogin() {
     this.http.get(`http://localhost:3000/teachers?email=${this.loginData.value.email}&password=${this.loginData.value.password}`).subscribe((res) => {
         localStorage.setItem('loginUser', JSON.stringify(res));
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/teacherLayout/home');
       });
   }
 }

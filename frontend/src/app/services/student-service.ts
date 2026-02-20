@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class StudentService {
   
-    Url = 'http://localhost:3000/students'; 
+    Url = 'https://localhost:7291/api/StudentAPI'; 
+    // Url = 'http://localhost:3000/students'; 
 
   constructor(private http: HttpClient) {}
 

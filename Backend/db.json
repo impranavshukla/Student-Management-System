@@ -20,25 +20,6 @@
       "image": "https://i.imgur.com/8Km9tLL.jpg"
     },
     {
-      "id": "2",
-      "rollNumber": "CSE302",
-      "fullName": "Kyojuro Rengoku",
-      "email": "kyojuro.rengoku@college.edu",
-      "phone": "9123456780",
-      "department": "Mechanical Engineering",
-      "year": 4,
-      "section": "B",
-      "attendancePercentage": 96,
-      "marks": {
-        "Thermodynamics": 93,
-        "Fluid Mechanics": 89,
-        "Strength of Materials": 92,
-        "Machine Design": 90
-      },
-      "address": "Kyoto",
-      "image": "https://i.imgur.com/JQ9qF6H.jpg"
-    },
-    {
       "id": "3",
       "rollNumber": "CSE303",
       "fullName": "Shinobu Kocho",

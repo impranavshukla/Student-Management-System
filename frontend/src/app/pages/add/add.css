@@ -1,66 +1,93 @@
-/* Main div background */
+/* ================= PAGE BACKGROUND ================= */
 .main {
-  width: 100%;
-  min-height: 100vh; /* full height of viewport */
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
-  background:#fefae0; /* gradient background */
+  background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+  padding: 40px 20px;
 }
 
-/* Form container */
+/* ================= FORM CARD ================= */
 .form-container {
-  width: 400px;
-  padding: 30px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.95); /* slightly transparent for pop-out effect */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
-/* Form heading */
+.form-container:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= TITLE ================= */
 .form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* ================= INPUT GROUP ================= */
+.input-group {
   margin-bottom: 20px;
-  color: #333;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Inputs */
-input {
-  width: 100%;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
+/* ================= LABEL ================= */
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ================= INPUT FIELD ================= */
+.student-form input {
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  font-size: 15px;
-  transition: 0.3s;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s ease;
 }
 
-/* Input focus effect */
-input:focus {
-  border-color: #764ba2;
-  box-shadow: 0 0 8px rgba(118, 75, 162, 0.5);
+.student-form input:focus {
   outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 6px rgba(25, 118, 210, 0.3);
 }
 
-/* Button */
-button {
-  width: 100%;
+/* ================= SUBMIT BUTTON ================= */
+.submit-btn {
+  margin-top: 10px;
   padding: 12px;
-  background:rgb(255, 165, 0);
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
   border: none;
   border-radius: 8px;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
+  transition: 0.3s ease;
 }
 
-/* Button hover */
-button:hover {
-  background: #904034;
-  transform: scale(1.03);
+.submit-btn:hover {
+  background: linear-gradient(135deg, #125ca1, #1976d2);
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 25px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
 }
