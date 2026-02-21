@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj": {}
+    "E:\\Student Management System\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj": {}
   },
   "projects": {
-    "D:\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj": {
+    "E:\\Student Management System\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj",
+        "projectUniqueName": "E:\\Student Management System\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj",
         "projectName": "ASPCoreWebAPICRUD",
-        "projectPath": "D:\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj",
+        "projectPath": "E:\\Student Management System\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD.csproj",
         "packagesPath": "C:\\Users\\iampr.LAPTOP-VGLHL6JU\\.nuget\\packages\\",
-        "outputPath": "D:\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\obj\\",
+        "outputPath": "E:\\Student Management System\\ASPCoreWebAPICRUD\\ASPCoreWebAPICRUD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

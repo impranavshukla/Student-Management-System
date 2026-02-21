@@ -13,7 +13,7 @@ export class StudentService {
   constructor(private http: HttpClient) {}
 
   getStudents(): Observable<any> {
-    return this.http.get<any>(this.Url);
+   return this.http.get<any>(this.Url);
   }
 
   addStudent(student: any) {
